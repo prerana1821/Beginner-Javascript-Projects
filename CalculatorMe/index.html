@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <input type="number" id="user-input" placeholder="Number">
+        <br><br>
+        <div id="buttons">
+            <button id="add-btn">+</button>
+            <button id="sub-btn">-</button>
+            <button id="mul-btn">*</button>
+            <button id="div-btn">/</button>
+        </div>
+    </section>
+
+    <section id="results">
+        <div id="calculated-input">0</div>
+        <div>Results: <span id="result-input">0</span></div>
+    </section>
+
+    <section id="hist">
+        Your History:
+        <br>
+        <div id="history"></div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+
+</html>

@@ -1,0 +1,7 @@
+Made a palindrome birthday site which checks whether your birthdate is palindrome. It converts birthdate in 6 
+formats to check the possibilities, if not it tells the nearest date with how may days user has missed.
+
+
+Find minimum number of currency notes and values that sum to given amount
+
+https://afteracademy.com/blog/find-the-closest-palindrome

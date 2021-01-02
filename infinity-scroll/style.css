@@ -165,6 +165,10 @@ h1 {
     /* display: contents; */
 }
 
+.image-container.hide {
+    visibility: hidden;
+}
+
 .image-container>div {
     flex: 0 50%;
     /* flex: 0 30%; */
@@ -269,6 +273,14 @@ img[title]:hover {
     }
     #pro-txt {
         margin: 0 1.3rem;
+    }
+    #loader img {
+        position: fixed;
+        top: 68%;
+        left: 21%;
+        width: 263px;
+        /* transform: translate(-50%, -50%); */
+        z-index: 100;
     }
 }
 

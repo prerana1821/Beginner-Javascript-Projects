@@ -2,6 +2,7 @@ let inputImg = document.querySelector('#input-img');
 let searchBtn = document.querySelector('#search-btn');
 let imageContainer = document.querySelector('.image-container');
 let selectList = document.getElementById("select-list");
+let loader = document.querySelector('#loader');
 
 // let apiKey = '563492ad6f917000010000013399437d33f545b6ad303f4f00c8745c';
 // let apiKey = '563492ad6f91700001000001eea6e7a56c3a4c8eb856a6ad623afa26';
@@ -47,14 +48,16 @@ function getImages() {
                         let div = document.createElement('div');
                         // img.appendChild(link);
                         // imageContainer.appendChild(img);
+                        loader.className = 'show';
+                        imageContainer.className = 'hide';
+                        setTimeout(function() {
+                            loader.className = loader.className.replace("show", "");
+                            imageContainer.className = imageContainer.className.replace("hide", "image-container");
+                            link.appendChild(img);
+                            div.appendChild(link);
+                            imageContainer.appendChild(div);
+                        }, 2000);
 
-                        // setTimeout(function() {
-                        //     loader.className = loader.className.replace("show", "");
-                        //     imageContainer.className = output.className.replace("hide", "");
-                        // }, 1000);
-                        link.appendChild(img);
-                        div.appendChild(link);
-                        imageContainer.appendChild(div)
                         console.log(img);
                         console.log(link);
                     });
@@ -98,11 +101,21 @@ selectList.addEventListener("click", function(e) {
                     let div = document.createElement('div');
                     // img.appendChild(link);
                     // imageContainer.appendChild(img);
-                    link.appendChild(img);
-                    div.appendChild(link);
-                    imageContainer.appendChild(div)
-                        // console.log(img);
-                        // console.log(link);
+                    // link.appendChild(img);
+                    // div.appendChild(link);
+                    // imageContainer.appendChild(div)
+
+                    loader.className = 'show';
+                    imageContainer.className = 'hide';
+                    setTimeout(function() {
+                        loader.className = loader.className.replace("show", "");
+                        imageContainer.className = imageContainer.className.replace("hide", "image-container");
+                        link.appendChild(img);
+                        div.appendChild(link);
+                        imageContainer.appendChild(div);
+                    }, 2000);
+                    // console.log(img);
+                    // console.log(link);
                 });
             }).catch(function errorHandling(error) {
                 console.log(error);

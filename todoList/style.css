@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Work+Sans:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* nav  */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 1.3rem 2rem;
+}
+
+.logo {
+    flex: 1;
+    font-size: 40px;
+    font-family: 'Redressed', cursive;
+}
+
+#btn-dark,
+#btn-light {
+    padding: 18px 12px;
+    border-radius: 50%;
+    margin: 0 0.8rem;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* heading text */
+
+.ml9 {
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-size: 6em;
+}
+
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+/* form input */
+
+form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-txt {
+    padding: 1rem 2rem;
+    font-size: larger;
+    outline: none;
+    border-radius: 2rem;
+}
+
+.btn-submit {
+    font-size: larger;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}

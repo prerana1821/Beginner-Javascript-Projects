@@ -7,7 +7,7 @@ inputTask.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         addTodo(event);
-        console.log('Hello');
+        // console.log('Hello');
     }
 });
 
@@ -15,7 +15,7 @@ addBtn.addEventListener('click', addTodo);
 
 function addTodo(event) {
     event.preventDefault();
-    console.log('Preraana');
+    // console.log('Prerana');
 
     if (inputTask.value.length <= 0) {
         alert('Please, Enter some text!')
@@ -45,10 +45,6 @@ function addTodo(event) {
     }
 
 }
-
-
-
-
 
 var textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

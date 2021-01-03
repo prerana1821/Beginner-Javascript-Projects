@@ -9,6 +9,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+body.dark {
+    background-color: #243441;
+}
+
 
 /* nav  */
 
@@ -22,6 +26,10 @@ body {
     flex: 1;
     font-size: 40px;
     font-family: 'Redressed', cursive;
+}
+
+.logo.dark {
+    color: #fff;
 }
 
 #btn-dark,
@@ -51,6 +59,10 @@ body {
     text-align: center;
     font-weight: 400;
     font-size: 6em;
+}
+
+.ml9.dark {
+    color: #fff;
 }
 
 .ml9 .text-wrapper {
@@ -94,6 +106,12 @@ section {
     box-shadow: inset 2px 5px 9px #E8E8E8, inset -9.91px -9.91px 15px #eeeeee70;
 }
 
+.input-txt.dark {
+    background: #243441;
+    color: #fff;
+    box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
+}
+
 .btn-submit {
     font-size: larger;
     border: none;
@@ -109,6 +127,11 @@ section {
 
 .btn-submit:hover {
     box-shadow: inset 2px 5px 9px #E8E8E8, inset -9.91px -9.91px 15px #eeeeee70;
+}
+
+.btn-submit.dark {
+    background: #243441;
+    box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
 }
 
 
@@ -131,6 +154,12 @@ section {
 
 .todo-item:hover {
     box-shadow: inset 2px 5px 9px #E8E8E8, inset -9.91px -9.91px 15px #eeeeee70;
+}
+
+.todo-item.dark {
+    background: rgb(36, 52, 65);
+    box-shadow: rgb(33, 47, 59) 9.91px 9.91px 15px, rgb(39, 57, 71) -9.91px -9.91px 15px;
+    color: #fff;
 }
 
 .left-div {
@@ -159,6 +188,10 @@ section {
     margin: 2rem 0;
     font-size: larger;
     font-weight: 400;
+}
+
+.date.dark {
+    color: #fff;
 }
 
 .fall {
@@ -195,12 +228,23 @@ select {
     box-shadow: inset 2px 5px 9px #E8E8E8, inset -9.91px -9.91px 15px #eeeeee70;
 }
 
+.select.dark {
+    background: #243441;
+    box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
+    color: #fff;
+}
+
 select {
     color: #000;
     cursor: pointer;
     font-size: larger;
     margin: 1rem;
     width: 9rem;
+}
+
+select.dark {
+    background: #243441;
+    color: #fff;
 }
 
 
@@ -214,6 +258,10 @@ select {
     padding: 1rem;
     cursor: pointer;
     pointer-events: none;
+}
+
+::placeholder.dark {
+    color: #fff;
 }
 
 

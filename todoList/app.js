@@ -3,6 +3,8 @@ let addBtn = document.querySelector('.btn-submit');
 let taskList = document.querySelector('.todo-lists');
 let date = document.querySelector('.date');
 let filterList = document.querySelector('.filter-todo');
+let btnDark = document.querySelector('#btn-dark');
+let btnLight = document.querySelector('#btn-light');
 
 
 let dateObject = new Date();
@@ -154,6 +156,22 @@ function formatAMPM(date) {
     let strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
 }
+
+btnDark.addEventListener('click', function() {
+    var all = document.getElementsByTagName("*");
+    for (var i = 0, max = all.length; i < max; i++) {
+        // console.log(all[i]);
+        all[i].classList.add("dark");
+    }
+})
+
+
+btnLight.addEventListener('click', function() {
+    var all = document.getElementsByTagName("*");
+    for (var i = 0, max = all.length; i < max; i++) {
+        all[i].classList.remove("dark");
+    }
+})
 
 // console.log(formatAMPM(new Date));
 

@@ -36,6 +36,14 @@ body {
     outline: none;
 }
 
+#btn-dark {
+    background-color: #000;
+}
+
+#btn-light {
+    background-color: #ddd;
+}
+
 
 /* heading text */
 
@@ -99,6 +107,8 @@ section {
     width: 40%;
     margin: 2rem auto;
     padding: 0 1rem;
+    background: aqua;
+    border-radius: 2rem;
 }
 
 .todo-list {
@@ -110,4 +120,18 @@ section {
 .btn-delete img {
     width: 55px;
     margin: 0 1rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.date {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: larger;
+    font-weight: 400;
 }

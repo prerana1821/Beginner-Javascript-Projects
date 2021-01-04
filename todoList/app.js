@@ -5,6 +5,7 @@ let date = document.querySelector('.date');
 let filterList = document.querySelector('.filter-todo');
 let btnDark = document.querySelector('#btn-dark');
 let btnLight = document.querySelector('#btn-light');
+let addTaskImg = document.querySelector('.btn-submit-icon');
 
 
 let dateObject = new Date();
@@ -21,6 +22,8 @@ inputTask.addEventListener("keyup", function(event) {
 addBtn.addEventListener('click', addTodo);
 taskList.addEventListener('click', checkDelete);
 filterList.addEventListener('click', filterTodo);
+let checkBtn;
+let deleteBtn;
 
 function addTodo(event) {
     event.preventDefault();
@@ -46,12 +49,12 @@ function addTodo(event) {
         leftDiv.appendChild(todoLi);
         todoItem.appendChild(leftDiv);
 
-        let checkBtn = document.createElement('div');
+        checkBtn = document.createElement('div');
         checkBtn.innerHTML = '<img class="btn-check-img" src="images/checked.gif"/>';
         checkBtn.classList.add('btn-check');
         todoItem.appendChild(checkBtn);
 
-        let deleteBtn = document.createElement('div');
+        deleteBtn = document.createElement('div');
         deleteBtn.innerHTML = '<img class="btn-delete-img" src="images/deleted.gif"/>';
         deleteBtn.classList.add('btn-delete');
         todoItem.appendChild(deleteBtn);
@@ -163,6 +166,16 @@ btnDark.addEventListener('click', function() {
         // console.log(all[i]);
         all[i].classList.add("dark");
     }
+    addTaskImg.setAttribute("src", "images/add-list-dark.png");
+    checkBtn.childNodes[0].remove();
+    let imgCheck = document.createElement('img');
+    imgCheck.setAttribute('src', 'images/checked-dark.png')
+    checkBtn.appendChild(imgCheck);
+
+    deleteBtn.childNodes[0].remove();
+    let imgDelete = document.createElement('img');
+    imgDelete.setAttribute('src', 'images/delete-dark.png')
+    checkBtn.appendChild(imgDelete);
 })
 
 
@@ -171,6 +184,18 @@ btnLight.addEventListener('click', function() {
     for (var i = 0, max = all.length; i < max; i++) {
         all[i].classList.remove("dark");
     }
+    addTaskImg.setAttribute("src", "https://img.icons8.com/ios-glyphs/40/000000/add-list.png");
+
+    addTaskImg.setAttribute("src", "images/add-list-dark.png");
+    checkBtn.childNodes[0].remove();
+    let imgChec = document.createElement('img');
+    imgChec.setAttribute('src', 'images/checked.gif')
+    checkBtn.appendChild(imgChec);
+
+    deleteBtn.childNodes[0].remove();
+    let imgDelet = document.createElement('img');
+    imgDelet.setAttribute('src', 'images/deleted.gif')
+    checkBtn.appendChild(imgDelet);
 })
 
 // console.log(formatAMPM(new Date));

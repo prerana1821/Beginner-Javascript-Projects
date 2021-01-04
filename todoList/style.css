@@ -112,6 +112,10 @@ section {
     box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
 }
 
+.input-txt.dark:hover {
+    box-shadow: inset 9.91px 9.91px 15px #212F3B, inset -9.91px -9.91px 15px #273947;
+}
+
 .btn-submit {
     font-size: larger;
     border: none;
@@ -132,6 +136,10 @@ section {
 .btn-submit.dark {
     background: #243441;
     box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
+}
+
+.btn-submit.dark:hover {
+    box-shadow: inset 9.91px 9.91px 15px #212F3B, inset -9.91px -9.91px 15px #273947;
 }
 
 
@@ -160,6 +168,10 @@ section {
     background: rgb(36, 52, 65);
     box-shadow: rgb(33, 47, 59) 9.91px 9.91px 15px, rgb(39, 57, 71) -9.91px -9.91px 15px;
     color: #fff;
+}
+
+.todo-item.dark:hover {
+    box-shadow: inset 9.91px 9.91px 15px #212F3B, inset -9.91px -9.91px 15px #273947;
 }
 
 .left-div {
@@ -232,6 +244,10 @@ select {
     background: #243441;
     box-shadow: 9.91px 9.91px 15px #212F3B, -9.91px -9.91px 15px #273947;
     color: #fff;
+}
+
+.select.dark:hover {
+    box-shadow: inset 9.91px 9.91px 15px #212F3B, inset -9.91px -9.91px 15px #273947;
 }
 
 select {

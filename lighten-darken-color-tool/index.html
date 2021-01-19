@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Tool</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/s2/u/0/favicons?domain=prerana-nawar.netlify.com">
 </head>
 
 <body>
@@ -21,16 +22,54 @@
         </div>
 
         <section>
-            <label for="hexColor">Hex Color</label>
+
+            <div id="inputs">
+                <div id="hex-input">
+                    <label for="hex">Color (Hex)</label>
+                    <input type="text" name="hex" id="hexInput" placeholder="#000000" />
+
+                </div>
+
+                <div class="toggle">
+                    <p id="lightenText" class="toggle-text">Lighten</p>
+                    <div id="toggleBtn" class="toggle-btn">
+                        <div class="inner-circle"></div>
+                    </div>
+                    <p id="darkenText" class="toggle-text unselected">Darken</p>
+                </div>
+            </div>
+
+            <div id="slide">
+                <label for="slider" id="sliderText">0%</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="slider" name="slider" </input>
+            </div>
+
+            <p>Input Color</p>
+            <div id="inputColor" class="box"></div>
+            <p id="alteredColorText">Altered Color</p>
+            <div id="alteredColor" class="box"></div>
+
+            <!-- <label for="hexColor">Hex Color</label>
             <input type="text" id="hex-color-input" name="hexColor" placeholder="#000000">
+
+            <div id="error"></div> 
+            <button id="btn-enter-color">Enter</button>
 
             <label for="slider" id="slider-text">0%</label>
             <input type="range" id="slider" name="slider" min="0" max="100" value="0">
 
+            <div class="toggle">
+                <p id="lightenText" class="toggle-text">Lighten</p>
+                <div id="toggleBtn" class="toggle-btn">
+                    <div class="inner-circle"></div>
+                </div>
+                <p id="darkenText" class="toggle-text unselected">Darken</p>
+            </div>
+
             <p>Input Color</p>
             <div class="box" id="input-box"></div>
             <p>Output Color</p>
-            <div class="box" id="output-box"></div>
+            <div class="box" id="output-box"></div> -->
         </section>
 
     </main>

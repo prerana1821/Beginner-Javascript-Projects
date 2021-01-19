@@ -3,8 +3,8 @@ let addBtn = document.querySelector('.btn-submit');
 let taskList = document.querySelector('.todo-lists');
 let date = document.querySelector('.date');
 let filterList = document.querySelector('.filter-todo');
-let btnDark = document.querySelector('#btn-dark');
-let btnLight = document.querySelector('#btn-light');
+let btnDark = document.getElementById('btn-dark');
+let btnLight = document.getElementById('btn-light');
 let addTaskImg = document.querySelector('.btn-submit-icon');
 
 

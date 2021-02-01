@@ -1,0 +1,168 @@
+    @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: "Raleway", sans-serif;
+        background: url('images/hero-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --font-heading: 'Bitter', sans-serif;
+        --font-body: 'Oxygen', sans-serif;
+    }
+    
+    section {
+        max-width: 80%;
+        padding: 2rem;
+        background-color: #ffffff66;
+        opacity: 1;
+        font: var(--font-heading);
+        /* filter: blur(0px); */
+        /* box-shadow: 20px 10px 0px 20px #f3f4f6; */
+        /* margin: auto; */
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-weight: 900;
+        font-size: xx-large;
+        margin: 1rem 2rem;
+    }
+    
+    #username {
+        padding: 0.8rem 2rem;
+        border: none;
+        font-size: larger;
+        margin: 1rem;
+        text-align: center;
+        outline: none;
+        background: #ffffff66;
+        border-radius: 6px;
+    }
+    
+    #username:hover,
+    #date:hover {
+        background: #ffffff66;
+        border-radius: 5rem;
+        /* background: #EEF0F4; */
+        box-shadow: 3px 8px 15px #D9DADE, -10px -8px 15px #FFFFFF;
+    }
+    
+    #greet,
+    #output {
+        font-size: x-large;
+        font-weight: 900;
+        margin: 1rem 13rem;
+    }
+    
+    #output {
+        margin: 1.3rem 3rem;
+    }
+    
+    #date {
+        background-color: #ffffff66;
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 7px;
+        font-size: x-large;
+        display: block;
+        margin: auto;
+        outline: none;
+    }
+    
+    #inner-div {
+        background-color: #ffffff88;
+        padding: 2rem 3rem;
+        margin: 2rem 1rem 0rem;
+        border-radius: 10px;
+    }
+    
+    .btns {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+    
+    .btn-func {
+        background: #ffffff99;
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-size: larger;
+        cursor: pointer;
+    }
+    
+    .btn-func:hover {
+        border-radius: 5rem;
+        box-shadow: 3px 8px 15px rgb(160 162 171), -10px -8px 15px #eef0f4;
+    }
+    
+    #tweet,
+    #reset {
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    
+    img {
+        width: 50px;
+    }
+    
+    img:hover {
+        border-radius: 5rem;
+        background-color: #ffffff11;
+        box-shadow: 3px 8px 15px rgb(160 162 171), -10px -8px 15px #eef0f4;
+    }
+    
+    @media screen and (max-width:700px) {
+        body {
+            overflow: auto;
+        }
+        section {
+            border-radius: 0;
+            max-width: 100vw;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            margin: 0;
+        }
+        #username {
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        #greet,
+        #output {
+            font-size: 1.5rem;
+            margin: 1rem 1rem;
+        }
+        #inner-div {
+            margin: 2rem 0rem 0rem;
+            padding: 2rem 1rem;
+        }
+        .btns {
+            flex-direction: column;
+        }
+    }
